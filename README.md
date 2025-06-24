@@ -1,4 +1,3 @@
-# SAHISHNU KUMAR SENTHIL  
 **Computer Science Student | Seeking Software Development Internship**  
 📧 [mesahishnukumar@gmail.com](mailto:mesahishnukumar@gmail.com)| 🔗 [GitHub](https://github.com/onlysaikikhere)  
 
