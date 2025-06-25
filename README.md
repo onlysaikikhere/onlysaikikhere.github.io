@@ -40,9 +40,9 @@
 ---
 
 ## TECHNICAL SKILLS  
-- **Programming Languages**: C, C++, Python, JavaScript, PHP, HTML5, CSS3  
-- **Frameworks & Libraries**: Flask, RESTful APIs, Fetch API  
-- **Tools & Technologies**: Git/GitHub, Docker, MySQL, JSON, Linux CLI  
+- **Programming Languages**: C, C++, Python, JavaScript, TypeScript, PHP, HTML5, CSS3  
+- **Frameworks & Libraries**: Angular, Flask, RESTful APIs, Fetch API, Bootstrap 5  
+- **Tools & Technologies**: Git/GitHub, Docker, MySQL, JSON, Angular CLI, Linux CLI  
 - **Infrastructure**: VMware ESXi, Proxmox, Apache/Nginx, SSH, Networking Protocols  
 
 ---
