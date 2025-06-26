@@ -25,9 +25,7 @@
                     <div class="social-links">
                         <a href="https://github.com/onlysaikikhere" target="_blank" class="social-link">🐙</a>
                         <a href="mailto:mesahishnukumar@gmail.com" class="social-link">📧</a>
-                        <a href="https://x.com" target="_blank" class="social-link">𝕏</a>
-                        <a href="https://linkedin.com" target="_blank" class="social-link">💼</a>
-                        <a href="mailto:mesahishnukumar@gmail.com" class="social-link">@</a>
+                        <a href="https://www.instagram.com/onlysaikihere1337/?hl=en" target="_blank" class="social-link">📸</a>
                     </div>
                 </div>
                 
@@ -48,6 +46,11 @@
         </div>
     </main>
 
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">
+        🌙
+    </button>
+
     <footer class="copyright-footer">
         <div class="container">
             <p class="copyright-text">
@@ -55,5 +58,36 @@
             </p>
         </div>
     </footer>
+    
+    <script>
+        // Dark mode functionality
+        function toggleDarkMode() {
+            const body = document.body;
+            const isDarkMode = body.classList.toggle('dark-mode');
+            const toggleButton = document.querySelector('.dark-mode-toggle');
+            
+            // Update button icon
+            toggleButton.textContent = isDarkMode ? '☀️' : '🌙';
+            
+            // Save preference to localStorage
+            localStorage.setItem('darkMode', isDarkMode);
+        }
+
+        // Load saved dark mode preference
+        function loadDarkModePreference() {
+            const isDarkMode = localStorage.getItem('darkMode') === 'true';
+            const toggleButton = document.querySelector('.dark-mode-toggle');
+            
+            if (isDarkMode) {
+                document.body.classList.add('dark-mode');
+                toggleButton.textContent = '☀️';
+            } else {
+                toggleButton.textContent = '🌙';
+            }
+        }
+
+        // Load dark mode preference when page loads
+        document.addEventListener('DOMContentLoaded', loadDarkModePreference);
+    </script>
 </body>
 </html>
