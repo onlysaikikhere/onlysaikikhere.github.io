@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahishnu Kumar - Computer Science Student</title>
+    <title>Sahishnu Kumar Senthil - Computer Science Student</title>
     <style>
         * {
             margin: 0;
@@ -12,269 +12,271 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f8f8f8;
             min-height: 100vh;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 40px;
         }
 
         header {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+            background: #f8f8f8;
+            padding: 30px 0;
+            position: relative;
         }
 
-        nav {
+        .nav-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
-        }
-
-        .nav-links a:hover {
-            color: #ffd700;
-        }
-
-        .hero {
-            padding: 120px 0 80px;
-            text-align: center;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            animation: fadeInUp 1s ease;
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-            animation: fadeInUp 1s ease 0.2s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #ffd700;
+        .nav-name {
+            font-size: 18px;
+            font-weight: 600;
             color: #333;
-            padding: 15px 30px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            animation: fadeInUp 1s ease 0.4s both;
         }
 
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-        }
-
-        .features {
-            padding: 80px 0;
-            background: white;
-        }
-
-        .features h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 3rem;
-            color: #333;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .feature-card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #667eea;
-        }
-
-        .contact {
-            padding: 80px 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: 2.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .contact-link {
-            display: inline-block;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: background 0.3s ease;
-        }
-
-        .contact-link:hover {
-            background: rgba(255, 255, 255, 0.2);
-        }
-
-        footer {
+        .resume-button {
             background: #333;
             color: white;
-            text-align: center;
-            padding: 2rem 0;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .resume-button:hover {
+            background: #555;
+        }
+
+        .resume-button::before {
+            content: '→';
+            font-size: 16px;
+        }
+
+        .main-content {
+            display: flex;
+            align-items: center;
+            min-height: 80vh;
+            gap: 80px;
+            padding: 40px 0;
+        }
+
+        .content-left {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .content-right {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .intro-text {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 40px;
+            max-width: 350px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            background: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+            font-size: 18px;
+        }
+
+        .social-link:hover {
+            background: #555;
+        }
+
+        .name-section {
+            position: relative;
+        }
+
+        .name-title {
+            font-size: 72px;
+            font-weight: 700;
+            color: #333;
+            line-height: 0.9;
+            margin-bottom: 8px;
+            letter-spacing: -2px;
+        }
+
+        .name-subtitle {
+            font-size: 16px;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .profile-section {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-image {
+            width: 380px;
+            height: 380px;
+            background: linear-gradient(135deg, #e0a3d9 0%, #a855f7 50%, #fbbf24 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding: 8px;
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: calc(50% - 10px) -50px; /* Cropped from the top and moved right by 10px */
+            transform: scale(1.1); /* Slightly zoom in */
+        }
+
+        .language-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            background: #333;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .lang-btn {
+            padding: 8px 12px;
+            background: transparent;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .lang-btn.active {
+            background: #90EE90;
+            color: #333;
+        }
+
+        .dotted-line {
+            width: 300px;
+            height: 1px;
+            border-top: 1px dotted #ccc;
+            margin: 20px 0;
         }
 
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
+            .container {
+                padding: 0 20px;
             }
             
-            .hero p {
-                font-size: 1.1rem;
-            }
-            
-            .nav-links {
-                gap: 1rem;
-            }
-            
-            .contact-links {
+            .main-content {
                 flex-direction: column;
-                align-items: center;
+                gap: 40px;
+                text-align: center;
+            }
+            
+            .name-title {
+                font-size: 48px;
+            }
+            
+            .profile-image {
+                width: 290px;
+                height: 290px;
+                padding: 6px;
+            }
+            
+            .profile-photo {
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                transform: scale(1.05);
+            }
+            
+            .nav-wrapper {
+                flex-direction: column;
+                gap: 20px;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">Sahishnu Kumar</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://github.com/onlysaikikhere" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="nav-name">Sahishnu Kumar Senthil</a>
+                <a href="resume.html" class="resume-button">Resume</a>
+            </div>
+        </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Sahishnu Kumar</h1>
-                <p>Computer Science Student | Aspiring Software Developer</p>
-                <a href="resume.html" class="cta-button">View Resume</a>
-            </div>
-        </section>
-
-        <section class="features">
-            <div class="container">
-                <h2>What I Do</h2>
-                <div class="feature-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🌐</div>
-                        <h3>Full-Stack Development</h3>
-                        <p>Building responsive web applications using Angular, Flask, and modern JavaScript frameworks with focus on user experience and clean code.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3>System Administration</h3>
-                        <p>Experience with server configuration, containerization using Docker, and managing infrastructure with VMware ESXi and Proxmox.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔧</div>
-                        <h3>Problem Solving</h3>
-                        <p>Developing efficient algorithms and data structures for complex problems, with expertise in C/C++, Python, and JavaScript.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="contact">
-            <div class="container">
-                <h2>Let's Connect</h2>
-                <p>I'm actively seeking software development internship opportunities</p>
-                <div class="contact-links">
-                    <a href="mailto:mesahishnukumar@gmail.com" class="contact-link">📧 Email</a>
-                    <a href="https://github.com/onlysaikikhere" target="_blank" class="contact-link">🔗 GitHub</a>
-                    <a href="resume.html" class="contact-link">📄 Resume</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
         <div class="container">
-            <p>&copy; 2025 Sahishnu Kumar. All rights reserved.</p>
+            <div class="main-content">
+                <div class="content-left">
+                    <p class="intro-text">I'm a Computer Science student specializing in full-stack development and system administration.</p>
+                    <div class="dotted-line"></div>
+                    <div class="social-links">
+                        <a href="https://github.com/onlysaikikhere" target="_blank" class="social-link">🐙</a>
+                        <a href="mailto:mesahishnukumar@gmail.com" class="social-link">📧</a>
+                        <a href="https://x.com" target="_blank" class="social-link">𝕏</a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link">💼</a>
+                        <a href="mailto:mesahishnukumar@gmail.com" class="social-link">@</a>
+                    </div>
+                </div>
+                
+                <div class="content-right">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <img src="IMG_9199.jpg" alt="Sahishnu Kumar Senthil" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name-section">
+                    <h1 class="name-title">Sahishnu<br>Kumar<br>Senthil</h1>
+                    <p class="name-subtitle">(yes, it's a mouthful)</p>
+                    <div class="dotted-line"></div>
+                </div>
+            </div>
         </div>
-    </footer>
+    </main>
 </body>
 </html>

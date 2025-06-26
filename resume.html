@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Sahishnu Kumar</title>
+    <title>Resume - Sahishnu Kumar Senthil</title>
     <style>
         * {
             margin: 0;
@@ -12,267 +12,252 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f8f9fa;
+            background: #f8f8f8;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 40px;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            background: #f8f8f8;
+            padding: 30px 0;
+            position: relative;
         }
 
-        nav {
+        .nav-wrapper {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: white;
+        .nav-name {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
             text-decoration: none;
-            transition: color 0.3s ease;
-            font-weight: 500;
         }
 
-        .nav-links a:hover {
-            color: #ffd700;
+        .home-button {
+            background: #333;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .home-button:hover {
+            background: #555;
+        }
+
+        .home-button::before {
+            content: '←';
+            font-size: 16px;
         }
 
         .resume-container {
-            background: white;
-            margin: 100px auto 40px;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: #f8f8f8;
+            margin: 40px auto;
+            padding: 60px 0;
+            max-width: 800px;
         }
 
         .resume-header {
-            text-align: center;
-            margin-bottom: 2rem;
-            padding-bottom: 2rem;
-            border-bottom: 2px solid #667eea;
+            text-align: left;
+            margin-bottom: 60px;
         }
 
         .resume-header h1 {
-            font-size: 2.5rem;
+            font-size: 48px;
+            font-weight: 700;
             color: #333;
-            margin-bottom: 0.5rem;
+            margin-bottom: 8px;
+            line-height: 0.9;
+            letter-spacing: -1px;
         }
 
         .resume-header p {
-            font-size: 1.2rem;
+            font-size: 16px;
             color: #666;
-            margin-bottom: 1rem;
+            margin-bottom: 30px;
+            font-weight: 400;
         }
 
         .contact-info {
             display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
+            gap: 30px;
+            align-items: center;
         }
 
         .contact-info a {
-            color: #667eea;
+            width: 40px;
+            height: 40px;
+            background: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-decoration: none;
+            border-radius: 3px;
+            transition: background 0.3s ease;
+            font-size: 18px;
         }
 
         .contact-info a:hover {
-            text-decoration: underline;
+            background: #555;
         }
 
         .section {
-            margin-bottom: 2.5rem;
+            margin-bottom: 50px;
         }
 
         .section h2 {
-            font-size: 1.8rem;
-            color: #667eea;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e9ecef;
+            font-size: 24px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .education-item, .project-item {
-            margin-bottom: 1.5rem;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
         }
 
         .project-item h3 {
             color: #333;
-            font-size: 1.3rem;
-            margin-bottom: 0.5rem;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
         }
 
         .tech-stack {
-            color: #667eea;
-            font-weight: 600;
-            margin-bottom: 0.5rem;
+            color: #666;
+            font-weight: 400;
+            font-size: 14px;
+            margin-bottom: 12px;
+            font-style: italic;
         }
 
         .project-item ul {
-            margin-left: 1.5rem;
-            margin-bottom: 1rem;
+            margin-left: 20px;
+            margin-bottom: 0;
         }
 
         .project-item li {
-            margin-bottom: 0.3rem;
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
         .education-item h3 {
             color: #333;
-            font-size: 1.3rem;
+            font-size: 18px;
+            font-weight: 600;
         }
 
         .education-item p {
             color: #666;
-            font-style: italic;
+            font-size: 15px;
         }
 
         .skills-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
         }
 
         .skill-category {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
+            background: transparent;
+            padding: 0;
+            border-radius: 0;
+            border-left: none;
         }
 
         .skill-category h4 {
             color: #333;
-            margin-bottom: 0.5rem;
-        }
-
-        .achievements ul {
-            margin-left: 1.5rem;
-        }
-
-        .achievements li {
-            margin-bottom: 0.5rem;
-        }
-
-        .portfolio-link {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 8px;
-        }
-
-        .portfolio-link a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
+            margin-bottom: 8px;
+            font-size: 16px;
             font-weight: 600;
         }
 
-        .portfolio-link a:hover {
-            text-decoration: underline;
+        .skill-category p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
-        .print-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #667eea;
-            color: white;
-            border: none;
-            padding: 15px;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+        .achievements ul {
+            margin-left: 20px;
         }
 
-        .print-button:hover {
-            transform: scale(1.1);
+        .achievements li {
+            margin-bottom: 8px;
+            color: #555;
+            font-size: 15px;
+            line-height: 1.6;
         }
 
         @media (max-width: 768px) {
+            .container {
+                padding: 0 20px;
+            }
+            
             .resume-container {
-                margin: 80px 10px 20px;
-                padding: 20px;
+                margin: 20px auto;
+                padding: 40px 0;
             }
             
             .resume-header h1 {
-                font-size: 2rem;
+                font-size: 36px;
             }
             
             .contact-info {
                 flex-direction: column;
-                gap: 0.5rem;
+                gap: 15px;
+                align-items: flex-start;
             }
             
-            .nav-links {
-                gap: 1rem;
-            }
-        }
-
-        @media print {
-            header, .print-button {
-                display: none;
-            }
-            
-            .resume-container {
-                margin: 0;
-                box-shadow: none;
-                border-radius: 0;
-            }
-            
-            body {
-                background: white;
+            .skills-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <nav class="container">
-            <div class="logo">Sahishnu Kumar</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="https://github.com/onlysaikikhere" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="nav-name">Sahishnu Kumar Senthil</a>
+                <a href="index.html" class="home-button">Home</a>
+            </div>
+        </div>
     </header>
 
     <div class="container">
         <div class="resume-container">
             <div class="resume-header">
-                <h1>Sahishnu Kumar</h1>
-                <p><strong>Computer Science Student | Seeking Software Development Internship</strong></p>
+                <h1>Sahishnu Kumar Senthil</h1>
+                <p>Computer Science Student | Seeking Software Development Internship</p>
                 <div class="contact-info">
-                    <span>📧 <a href="mailto:mesahishnukumar@gmail.com">mesahishnukumar@gmail.com</a></span>
-                    <span>🔗 <a href="https://github.com/onlysaikikhere" target="_blank">GitHub</a></span>
+                    <a href="mailto:mesahishnukumar@gmail.com">📧</a>
+                    <a href="https://github.com/onlysaikikhere" target="_blank">🐙</a>
                 </div>
             </div>
 
@@ -354,21 +339,14 @@
             </div>
 
             <div class="section achievements">
-                <h2>RELEVANT EXPERIENCE & ACHIEVEMENTS</h2>
+                <h2>Experience & Achievements</h2>
                 <ul>
                     <li>Mastered full-stack development through hands-on project building and open-source contributions</li>
                     <li>Gained system administration skills including server configuration, containerization with Docker</li>
                     <li>Completed networking projects involving LAN setup, port forwarding, and firewall configuration</li>
                 </ul>
             </div>
-
-            <div class="portfolio-link">
-                <p><strong>Portfolio and code samples available at GitHub:</strong><br>
-                <a href="https://github.com/onlysaikikhere" target="_blank">https://github.com/onlysaikikhere</a></p>
-            </div>
         </div>
     </div>
-
-    <button class="print-button" onclick="window.print()" title="Print Resume">🖨️</button>
 </body>
 </html>
