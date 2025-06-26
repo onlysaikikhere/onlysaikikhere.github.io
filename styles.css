@@ -385,20 +385,69 @@ header {
         padding: 0 20px;
     }
     
+    /* Header mobile styles */
+    header {
+        padding: 20px 0;
+    }
+    
+    .nav-wrapper {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .nav-name {
+        font-size: 16px;
+    }
+    
+    .resume-button, .home-button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
     /* Home page mobile styles */
     .main-content {
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         text-align: center;
+        padding: 30px 0;
+        min-height: auto;
+    }
+    
+    .content-left {
+        max-width: 100%;
+        order: 2;
+    }
+    
+    .content-right {
+        order: 1;
+    }
+    
+    .name-section {
+        order: 3;
     }
     
     .name-title {
         font-size: 48px;
+        line-height: 1;
+        margin-bottom: 12px;
+    }
+    
+    .name-subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    
+    .intro-text {
+        font-size: 15px;
+        max-width: 100%;
+        margin-bottom: 30px;
+        line-height: 1.7;
     }
     
     .profile-image {
-        width: 290px;
-        height: 290px;
+        width: 280px;
+        height: 280px;
         padding: 6px;
     }
     
@@ -407,28 +456,160 @@ header {
         transform: scale(1.05);
     }
     
-    .nav-wrapper {
-        flex-direction: column;
-        gap: 20px;
+    .social-links {
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+    
+    .dotted-line {
+        width: 200px;
+        margin: 15px auto;
     }
     
     /* Resume page mobile styles */
     .resume-container {
         margin: 20px auto;
-        padding: 40px 0;
+        padding: 30px 0;
+    }
+    
+    .resume-header {
+        margin-bottom: 40px;
+        text-align: center;
     }
     
     .resume-header h1 {
-        font-size: 36px;
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+    
+    .resume-header p {
+        font-size: 15px;
+        margin-bottom: 25px;
     }
     
     .contact-info {
-        flex-direction: column;
-        gap: 15px;
-        align-items: flex-start;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .section {
+        margin-bottom: 35px;
+    }
+    
+    .section h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .project-item, .education-item {
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+    }
+    
+    .project-item h3 {
+        font-size: 17px;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    
+    .tech-stack {
+        font-size: 13px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .project-item ul {
+        margin-left: 15px;
+        text-align: left;
+    }
+    
+    .project-item li {
+        font-size: 14px;
+        margin-bottom: 6px;
+        line-height: 1.5;
+    }
+    
+    .education-item h3 {
+        font-size: 17px;
+        text-align: center;
+    }
+    
+    .education-item p {
+        font-size: 14px;
+        text-align: center;
     }
     
     .skills-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .skill-category {
+        text-align: center;
+    }
+    
+    .skill-category h4 {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .skill-category p {
+        font-size: 14px;
+    }
+    
+    .achievements ul {
+        margin-left: 15px;
+        text-align: left;
+    }
+    
+    .achievements li {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+    
+    /* Copyright footer mobile styles */
+    .copyright-footer {
+        padding: 20px 0;
+        margin-top: 40px;
+    }
+    
+    .copyright-text {
+        font-size: 12px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .name-title {
+        font-size: 36px;
+    }
+    
+    .profile-image {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .resume-header h1 {
+        font-size: 28px;
+    }
+    
+    .nav-name {
+        font-size: 15px;
+    }
+    
+    .resume-button, .home-button {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }
