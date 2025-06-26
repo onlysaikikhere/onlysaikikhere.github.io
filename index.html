@@ -4,244 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahishnu Kumar Senthil - Computer Science Student</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f8f8f8;
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 40px;
-        }
-
-        header {
-            background: #f8f8f8;
-            padding: 30px 0;
-            position: relative;
-        }
-
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav-name {
-            font-size: 18px;
-            font-weight: 600;
-            color: #333;
-            text-decoration: none;
-        }
-
-        .resume-button {
-            background: #333;
-            color: white;
-            padding: 12px 24px;
-            text-decoration: none;
-            border-radius: 0;
-            font-weight: 500;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: background 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .resume-button:hover {
-            background: #555;
-        }
-
-        .resume-button::before {
-            content: '→';
-            font-size: 16px;
-        }
-
-        .main-content {
-            display: flex;
-            align-items: center;
-            min-height: 80vh;
-            gap: 80px;
-            padding: 40px 0;
-        }
-
-        .content-left {
-            flex: 1;
-            max-width: 400px;
-        }
-
-        .content-right {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .intro-text {
-            font-size: 16px;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 40px;
-            max-width: 350px;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .social-link {
-            width: 40px;
-            height: 40px;
-            background: #333;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            border-radius: 3px;
-            transition: background 0.3s ease;
-            font-size: 18px;
-        }
-
-        .social-link:hover {
-            background: #555;
-        }
-
-        .name-section {
-            position: relative;
-        }
-
-        .name-title {
-            font-size: 72px;
-            font-weight: 700;
-            color: #333;
-            line-height: 0.9;
-            margin-bottom: 8px;
-            letter-spacing: -2px;
-        }
-
-        .name-subtitle {
-            font-size: 16px;
-            color: #666;
-            font-weight: 400;
-            margin-bottom: 20px;
-        }
-
-        .profile-section {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .profile-image {
-            width: 380px;
-            height: 380px;
-            background: linear-gradient(135deg, #e0a3d9 0%, #a855f7 50%, #fbbf24 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            padding: 8px;
-        }
-
-        .profile-photo {
-            width: 100%;
-            height: 100%;
-            border-radius: 50%;
-            object-fit: cover;
-            object-position: calc(50% - 10px) -50px; /* Cropped from the top and moved right by 10px */
-            transform: scale(1.1); /* Slightly zoom in */
-        }
-
-        .language-toggle {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            display: flex;
-            background: #333;
-            border-radius: 3px;
-            overflow: hidden;
-        }
-
-        .lang-btn {
-            padding: 8px 12px;
-            background: transparent;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .lang-btn.active {
-            background: #90EE90;
-            color: #333;
-        }
-
-        .dotted-line {
-            width: 300px;
-            height: 1px;
-            border-top: 1px dotted #ccc;
-            margin: 20px 0;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 20px;
-            }
-            
-            .main-content {
-                flex-direction: column;
-                gap: 40px;
-                text-align: center;
-            }
-            
-            .name-title {
-                font-size: 48px;
-            }
-            
-            .profile-image {
-                width: 290px;
-                height: 290px;
-                padding: 6px;
-            }
-            
-            .profile-photo {
-                border: 2px solid rgba(255, 255, 255, 0.3);
-                transform: scale(1.05);
-            }
-            
-            .nav-wrapper {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#" class="nav-name">Sahishnu Kumar Senthil</a>
+                <a href="index.html" class="nav-name">Sahishnu Kumar Senthil</a>
                 <a href="resume.html" class="resume-button">Resume</a>
             </div>
         </div>
@@ -278,5 +47,13 @@
             </div>
         </div>
     </main>
+
+    <footer class="copyright-footer">
+        <div class="container">
+            <p class="copyright-text">
+                © 2025 <a href="mailto:mesahishnukumar@gmail.com">Sahishnu Kumar Senthil</a>. All rights reserved.
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
